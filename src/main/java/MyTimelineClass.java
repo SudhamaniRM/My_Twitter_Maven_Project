@@ -9,7 +9,7 @@ public class MyTimelineClass {
         List<Status> status;
         {
             try {
-                status = twit.getHomeTimeline();
+                status = twit.getHomeTimeline(); //gets latest timeline
                 for (Status st : status) {
                     System.out.println(st.getUser().getName() + "----------------" + st.getText());
                 }
